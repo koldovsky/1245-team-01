@@ -23,3 +23,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ```
 
 ##### Andrii Voloshyn
+##### Andrii Savitskij
