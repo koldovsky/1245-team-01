@@ -26,3 +26,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ##### Andrii Savitskij
 ##### Bohdan Forkutsa
 ##### Artem Vysokopoias
+##### Nazar Humnytskyi
