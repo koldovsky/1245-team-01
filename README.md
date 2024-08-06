@@ -29,3 +29,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ##### Nazar Humnytskyi
 ##### Diana Bulakhova
 #### Arsen Strus
+##### Nikita Chumak
