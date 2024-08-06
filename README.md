@@ -27,3 +27,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ##### Bohdan Forkutsa
 ##### Artem Vysokopoias
 ##### Nazar Humnytskyi
+##### Diana Bulakhova
