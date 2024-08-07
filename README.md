@@ -29,3 +29,6 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ##### Nazar Humnytskyi
 ##### Diana Bulakhova
 #### Arsen Strus
+##### Nikita Chumak
+##### Holub Nazarii
+##### Dolzhykov Oleksandr
