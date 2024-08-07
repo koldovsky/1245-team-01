@@ -31,3 +31,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 #### Arsen Strus
 ##### Nikita Chumak
 ##### Holub Nazarii
+##### Dolzhykov Oleksandr
