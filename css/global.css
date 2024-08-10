@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #1a1b29;
+    --text-color: white;
+    --border-color: white;
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
