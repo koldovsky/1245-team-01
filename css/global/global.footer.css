@@ -1,0 +1,143 @@
+.footer {
+    background-color: var(--footer-bg-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  .footer__logo-container {
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}     
+  
+  .footer__socials-buttons,
+  .footer__navigation-list,
+  .footer__links-list,
+  .footer-we-are-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center; /* Центрування тексту та іконок для мобайлу */
+  }
+  
+  .footer__socials-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer__socials-logo{
+    
+    margin-left: 10px;
+  }
+  .footer__socials-logo img {
+    width: 23px;
+    height: 23px;
+  }
+  
+  .footer__socials-logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer__navigation-list b,
+  .footer__links-list b,
+  .footer-we-are-list b {
+    display: block;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+  }
+  
+  .footer__navigation-item,
+  .footer__links-item,
+  .footer-we-are-item {
+    margin: 10px 0; /* Відстань між елементами списків */
+  }
+  
+  .footer__navigation-link,
+  .footer__links-link,
+  .footer__we-are-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-we-are-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрування іконок і тексту в "We are on" */
+  }
+  
+  .footer-we-are-item img {
+    margin-right: 10px; /* Відступ між іконкою і текстом */
+  }
+  .footer-we-are-img{
+    width:20px;
+}
+
+  .footer__end {
+    margin-top: 20px;
+    font-size: 14px;
+
+  }
+
+  @media (min-width: 700px) {
+    .footer {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      text-align: left;
+      gap: 20px;
+    }
+  
+    .footer__logo-container {
+      grid-column: 1;
+      text-align: left;
+      width: 120px;
+      margin:0px;
+    }
+  
+    .footer__socials {
+      grid-column: 1 / 2;
+    }
+  
+    .footer__socials-buttons {
+      justify-content: flex-start;
+    }
+  
+    .footer__navigation-list,
+    .footer__links-list,
+    .footer-we-are-list {
+      text-align: left; /* Вирівнювання списків по лівому краю на десктопах */
+    }
+  
+    .footer__navigation {
+      grid-column: 2 / 3;
+    }
+  
+    .footer__links {
+      grid-column: 3 / 4;
+    }
+  
+    .footer__we-are-on {
+      grid-column: 4 / 5;
+    }
+  
+    .footer-we-are-item {
+      justify-content: flex-start; /* Вирівнювання іконок і тексту в "We are on" по лівому краю */
+    }
+  
+    .footer__end {
+      grid-column: 1 / 5;
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+    }
+  }
+  
