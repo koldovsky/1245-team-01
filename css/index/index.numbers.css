@@ -7,31 +7,14 @@
     font-family: "Noto Sans", sans-serif;
 }
 
-h3.numbers__value{
-font-family: "Righteous", sans-serif;
-}
-
-.numbers__value--highlight{
-    font-size: 3.5rem;
-}
-
-.numbers__bottom{
-    margin-top: 60px;
-    text-align: center;
-}
-
-.numbers__label{
-    margin-top: 10px;
+.numbers__text--highlight{
+    color: #dbdbdb;
+    font-size: 0.75rem;
 }
 
 .numbers__result{
     font-family: "Righteous", sans-serif;
     margin-top: 20px;
-}
-
-.numbers__text--highlight{
-    color: #dbdbdb;
-    font-size: 0.75rem;
 }
 
 .numbers__result--title{
@@ -52,6 +35,20 @@ font-family: "Righteous", sans-serif;
     margin-top: 25px;
 }
 
+.numbers__bottom{
+    margin-top: 60px;
+    text-align: center;
+}
+.numbers__item
+
+h3.numbers__value{
+    font-family: "Righteous", sans-serif;
+}
+
+.numbers__value--highlight{
+    font-size: 3.5rem;
+}
+
 .numbers__value--symbol{
     color: #7f00ff
 }
@@ -60,12 +57,29 @@ font-family: "Righteous", sans-serif;
     color: #e100ff;
 }
 
+.numbers__label{
+margin-top: 10px;
+}
+
 .numbers__label--text{
     font-weight: bold;
     font-size: 0.875rem;
+}
+
+.numbers__info{
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .numbers__info--text{
     color: #cccccc;
     font-size: 1rem;
 }
+
+.numbers__join{
+    background-color: #2a0239;
+}
+
+
+
+
