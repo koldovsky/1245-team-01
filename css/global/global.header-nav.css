@@ -1,0 +1,192 @@
+/* Стилі для шапки */
+.header {
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Логотип */
+.header__logo {
+  max-width: 170px;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.header__logo-link {
+  display: inline-block;
+}
+
+.header__logo-img {
+  max-width: 200px;
+}
+/* Логотип */
+
+/* Бургер-меню */
+.burger__logo-img{
+  display: none;
+}
+
+.header__burger {
+  display: none; /* Бургер-кнопка прихована за замовчуванням */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--primary-color); /* Білий колір ліній */
+}
+/* Бургер-меню */
+
+/* Меню */
+.header__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.header__menu--open {
+  transform: translateX(0);
+}
+
+.header__menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu-item {
+  margin-bottom: 20px;
+}
+
+.header__menu-link {
+  color: var(--nav-text-color);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header__listen-now { /* Проблеми з переносом кнопки(можливі рішення: зробити грід 3х2*/ 
+  display: flex;  
+  min-width: 150px;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(-315deg, #e100ff,#3e00fa);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: var(--nav-text-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__listen-now:hover{
+  background: linear-gradient(-315deg, #3e00fa, #e100ff);
+}
+
+.header__listen-ico{
+  position: relative;
+  top: 0.17vh;
+  width: 15%;
+  display: inline-flex;
+}
+/* Меню */
+
+/* Медіа-запит для екранів до 700px */
+@media (max-width: 700px) {
+  .header__burger {
+
+    display: block; 
+    position: absolute;
+    top: 1.2vh;
+    right: 2vw;
+    .header__burger-line{
+     background: white; 
+    }
+  }
+
+  .burger__logo-img {
+    display: block;
+    margin-left: 30vw;
+    margin-right: auto;
+    margin-bottom: 15vh;
+    max-width: 40%;
+  }
+
+  .header__menu {
+    display: block; 
+  }
+
+  .header__menu-list {
+    margin: 100px 10 10 20px;
+    .header__menu-item{
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  .header__listen-now {
+    bottom: 20px;
+    border-radius: 30px;
+  }
+}
+
+  @media (min-width: 700px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header__menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    transform: none;
+    padding-top: 0;
+  }
+
+  .header__menu-list {
+    display: flex;
+    margin: 0;
+    gap: 20px; /* Відстань між елементами списку */
+  }
+
+  .header__menu-item {
+    margin: 0;
+  }
+
+  .header__burger {
+    display: none; /* Приховуємо бургер-кнопку на великих екранах */
+  }
+
+  .header__logo {
+    margin-right: auto; /* Відступ між логотипом та меню */
+  }
+
+  .header__listen-now {
+    position: static;
+    transform: none;
+    margin-left: 40px; /* Відступ між кнопкою та меню */
+  }
+}

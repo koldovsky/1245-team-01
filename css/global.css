@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
-
+@import "global/global.header-nav.css";
+@import "global/global.footer.css";
 *,
 *::after,
 *::before {
@@ -9,11 +10,14 @@
 }
 
 :root {
+    --heading-color: white;
+    --nav-text-color:#DBDBDB;
     --accent-color: #1a1b29;
     --text-color: white;
     --border-color: white;
     scroll-behavior: smooth;
-    color: var(--text-color);
+    background-color: var(--accent-color);
+    font-family: Noto Sans,sans-serif;
 }
 
 img {
@@ -22,6 +26,7 @@ img {
 }
 
 .container {
+    justify-content: space-between;
     max-width: 1200px;
     margin: auto;
 }
