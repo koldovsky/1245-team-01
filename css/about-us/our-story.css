@@ -1,0 +1,61 @@
+body {
+    background-color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.story__icon-text {
+    color: #7f00ff;
+    font-size: 34px;
+    font-family: 'Righteous', cursive;
+}
+
+.vision__icon {
+    color: #FF7433;
+    font-size: 34px;
+    font-family: 'Righteous', cursive;
+}
+
+.story__title-text {
+    color: #DBDBDB;
+    font-size: 12px;
+}
+
+.description__highlight--echowave {
+    color: #FF7433;
+    font-size: 19px;
+}
+
+.description__text {
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+.description__highlight {
+    color: #CCCCCC;
+    font-size: 16px;
+}
+
+.description__link {
+    color: #FFFFFF;
+    font-size: 14.3px;
+}
+
+.divider {
+    width: 3000px;
+    height: 31px;
+}
+
+.vision__title {
+    color: #DBDBDB;
+    font-size: 12px;
+}
+
+.vision__highlight--name {
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+.vision__highlight {
+    color: #CCCCCC;
+    font-size: 16px;
+}
