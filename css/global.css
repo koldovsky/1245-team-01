@@ -9,6 +9,7 @@
 }
 
 :root {
+    --nav-text-color:#DBDBDB;
     --accent-color: #1a1b29;
     --text-color: white;
     --border-color: white;
