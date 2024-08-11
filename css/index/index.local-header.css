@@ -1,2 +1,129 @@
-@import "global.header.css";
-@import "global.footer.css";
+.local-header{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    font-family:"Noto Sans", sans-serif; 
+    color: white; 
+}
+.local-header a {
+    text-decoration: none;
+    color: white; 
+}
+.local-header__section-header {
+    display: grid;
+    gap: 5px;
+}
+.local-header__title{
+    font-size: 56px; 
+    font-weight: bold;
+    font-family:"Righteous", cursive;
+}
+.local-header__description{
+    font-size: 14px;
+    display: block;
+    justify-content: left; 
+    align-items: left; 
+    text-align: left;
+    
+}
+.local-header__description-hr {
+    width: 30%;
+    margin: 0;
+    background-color: rgb(255, 116, 51);
+    height: 5px;
+    border: 0;
+}
+.local-header__branding h1{
+    font-size: 56px;
+    word-break: break-word;
+    font-family:"Righteous", cursive;
+}
+.local-header__info-title{
+    font-size: 19px;
+    font-weight: bold;
+}
+.local-header__icon-conteiner{
+    font-size: 26px;
+    font-weight: bold;
+}
+.local-header__title,.local-header__description,.local-header__branding,.local-header__info,.local-header__podcasts,.local-header__icon,.local-header__section-footer{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.local-header__podcasts-title{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+.local-header__podcasts-links-container-1,.local-header__podcasts-links-container-2{
+    padding-right: 15px;
+}
+.local-header__podcasts hr{
+    background-color:rgba(255, 255, 255, 0.1);
+    border-color:rgba(255, 255, 255, 0.1);
+}
+.local-header__podcasts-links-container-1{
+    margin-bottom: 17px;
+}
+.local-header__section-footer{
+    margin-top: 50px;
+}
+.local-header__section-footer img {
+    width: 100%;
+}
+@media (min-width: 800px) {
+    .local-header__section-header {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .local-header__description {
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
+    .local-header__description-hr {
+        width: 90px;  
+        margin: auto;
+    }
+    .local-header__branding{
+        display: flex;
+        align-items: center; 
+    }
+    .local-header__icon {
+        text-align: center;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .local-header__podcasts-links{
+        display: flex;
+        flex-direction:row ;
+    }
+    .local-header__podcasts-links-container-1{
+        margin-bottom: 0;
+    }
+    .local-header__section-footer{
+        margin-top: 55px;
+    }
+    
+}
+@media (min-width: 990px){
+    .local-header__title{
+        font-size: 68px; 
+    }
+    .local-header__description {
+        font-size: 15px;
+    }
+    .local-header__branding h1{
+        font-size: 68px;
+    }
+    .local-header__info-title{
+        font-size: 21px;
+    }
+    .local-header__icon-conteiner{
+        font-size: 28px;
+    }
+
+}

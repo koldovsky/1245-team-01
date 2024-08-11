@@ -1,0 +1,84 @@
+.carousel {
+    display: flex; 
+    flex-wrap: nowrap; 
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .arrow-svg_1j4 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  .carouselimg {
+    max-width: 250px;
+    height: auto;
+    margin: 0 5px;
+  }
+  .arrow-svg_1j4 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer; 
+  }
+  .arrow-svg_1j5 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: rotate(180deg); 
+  }
+  .album-text-musictype{
+    font-size:12px;
+    color: #ff7433;
+  }
+  .album-text-albumname{
+    font-size:24px;
+    color: #ffff;
+  }
+  .album-text-autormname{
+    font-size:16px;
+    color: #ccc;
+  }
+  .carousel-item {
+    flex: 0 0 auto;
+    text-align: left; 
+    padding: 15px;
+    border-radius: 10px; 
+  }
+  .genre-type{
+    width: 100%;
+  }
+  .genre-text{
+    font-size: 68px;
+    text-align: center;
+  }
+  .slesh-text-lightpurple{
+    font-size: 68px;
+    color: #E100ff;
+    font-weight: 900;
+  }
+  .slesh-text-purple{
+    font-size: 68px;
+    color: #7f00ff;
+    font-weight: 900;
+  }
+  .slesh-text-orange{
+    font-size: 68px;
+    color: #ff7433;
+    font-weight: 900;
+  }
+  .slesh-text-blue{
+    font-size: 68px;
+    color: #4858f9;
+    font-weight: 900;
+  }
+  @media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 200px; 
+  }
+  .genre-text {
+    font-size: 58px;
+  }
+} 
