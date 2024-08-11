@@ -1,5 +1,4 @@
 .local-header{
-    background-color: var(--accent-color);
     padding-top: 70px;
     padding-bottom: 60px;
     font-family:"Noto Sans", sans-serif; 
@@ -101,9 +100,14 @@
     .local-header__podcasts-links{
         display: flex;
         flex-direction:row ;
+        justify-content: space-between;
     }
     .local-header__podcasts-links-container-1{
         margin-bottom: 0;
+        width: 40%;
+    }
+    .local-header__podcasts-links-container-2{
+        width: 40%;
     }
     .local-header__section-footer{
         margin-top: 55px;
