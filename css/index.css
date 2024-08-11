@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 @import "global.css";
 @import "./index/index.local-header.css";
 @import "./index/index.section-podcasts.css";
+=======
+@import "/css/global.css";
+@import "./index/index.local-header.css";
+@import "index.schedule.css";
+@import "./index/index.section-slider-albums.css"
+>>>>>>> 433a87b77a388897f4d318ac415fecc53750800d
