@@ -9,14 +9,11 @@
 }
 
 :root {
-    --ui-btn-primary-bg-gradient-angle: -315deg;
-    --ui-btn-primary-bg-gradient-colors: #e100ff, #3e00fa;
-    --button-bg-color: #5a00e0;
     --accent-color: #1a1b29;
     --text-color: white;
     --border-color: white;
     scroll-behavior: smooth;
-    color: var(--text-color);
+    background-color: var(--accent-color);
     font-family: Noto Sans,sans-serif;
 }
 
