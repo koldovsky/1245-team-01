@@ -65,6 +65,10 @@
 .local-header__podcasts-links-container-1{
     margin-bottom: 17px;
 }
+.local-header__podcast-link{
+     display: flex;
+     flex-position:row;
+}
 .local-header__section-footer{
     margin-top: 50px;
 }
