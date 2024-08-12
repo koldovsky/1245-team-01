@@ -1,16 +1,7 @@
-@import "/css/global.css";
+@import "global.css";
 @import "./index/index.local-header.css";
-@import "index.schedule.css";
+@import "./index/index.schedule.css";
 @import "./index/index.section-slider-albums.css";
 @import "./index/index.section-podcasts.css";
-
-
-
-
-
-
-@import "index/index.numbers.css";
-
-
-
-
+@import "./index/index.section-news.css";
+@import "./index/index.numbers.css";

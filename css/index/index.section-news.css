@@ -1,0 +1,85 @@
+.news p, .news h2, .news h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.news {
+    width:100%;
+}
+
+.container__news {
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    max-width:1200px;
+    padding: 0 15px;
+}
+
+.news__header {
+    display: flex;
+}
+
+.news__info .news__description {
+    width:100%;
+    padding: 0 30px;
+}
+
+.news__subtitle {
+    color: rgb(219, 219, 219);
+    font-family: "Noto Sans", sans-serif;
+    font-weight:700;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.news__description {
+    color: rgb(204, 204, 204);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.news h2 {
+    font-family: "Righteous", cursive;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.news__content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-article {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: calc(33.333% - 30px);
+}
+
+.news-article__image {
+    width:100%;
+    display:block;
+}
+
+.news-article__date {
+    font-family: "Noto Sans", sans-serif;
+    font-size:12px;
+    color:rgb(255,116,51);
+    font-weight: 700;
+    letter-spacing: 1,2px;
+    line-height: 1.2;
+    margin-top:20px;
+}
+
+
+
+
