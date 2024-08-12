@@ -1,0 +1,88 @@
+body {
+    background-color: #000000;
+    font-family: Noto Sans, sans-serif;
+    color: #FFFFFF;
+}
+
+.section__hero {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+
+.container,
+.section__hero-image {
+    max-width: 40%;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.section__hero-text-tune {
+    color: #FF7433;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.section__hero-text-discover {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.section__hero-text-stay {
+    color: #FFFFFFB3;
+    font-size: 19px;
+}
+
+.section_about {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.section__about-title {
+    color: #DBDBDB;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section__about-subtitle {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: Righteous, cursive;
+    margin-bottom: 20px;
+}
+
+.section__about-text {
+    color: #CCCCCC;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.feature_list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.features__item {
+    text-align: center;
+}
+
+.features__item-title {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.features__item-text {
+    color: #CCCCCC;
+    font-size: 16px;
+}
+
+.features__item-devider {
+    margin: 10px 0;
+}

@@ -1,37 +1,48 @@
-<nav class="header__nav" style="background-color: #1a1b29">
-  <div class="header__logo-container">
-    <a class="header__logo-link" href="index.html">
-      <img
-        class="header__logo-image"
-        width="145"
-        src="img/global/radio-station-logo.svg"
-        alt="Radio Station Logo"
-      />
-    </a>
-  </div>
-  <ul data-proofer-ignore class="header__menu">
-    <li class="header__menu-item">
-      <a class="header__menu-link" href="about-us.html">About Us</a>
-    </li>
-    <li class="header__menu-item">
-      <a class="header__menu-link" href="#program">Program</a>
-    </li>
-    <li class="header__menu-item">
-      <a class="header__menu-link" href="podcasts.html">Podcasts</a>
-    </li>
-    <li class="header__menu-item">
-      <a class="header__menu-link" href="#artists">Trending Artists</a>
-    </li>
-    <li class="header__menu-item">
-      <a class="header__menu-link" href="contacts.html">Contacts</a>
-    </li>
-  </ul>
-  <a class="header__listen-link" href="#">
-    <img
-      class="header__listen-image"
-      src="img/global/headphones.svg"
-      alt="Headphones"
-    />
-    <span class="header__listen-text">Listen Now</span>
-  </a>
-</nav>
+<nav data-proofer-ignore class="header container">
+
+    <!-- Burger menu button -->
+    <button class="header__burger" id="burger-menu-toggle" aria-label="Toggle menu">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+    </button>
+
+    <nav class="header__menu" id="burger-menu">
+      <div class="header__menu-top">
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link">
+            <img src="img/global/radio-station-logo.svg" alt="Site Logo" class="header__logo-img">
+          </a>
+        </div>
+        <a href="index.html">
+          <img src="img/global/radio-station-logo.svg" alt="Site Logo" class="burger__logo-img">
+        </a>
+        <button class="header__burger header__burger--close" id="burger-menu-close" aria-label="Close menu">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="about-us.html">About Us</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#program">Program</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="podcasts.html">Podcasts</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="#artists">Trending Artists</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+      <div>
+      <a href="listen-now.html" class="header__listen-now">
+        <span class="header__listen-text"><img src="img/global/headphones.svg" class="header__listen-ico"/> Listen Now</span>
+      </a>
+    </div>
+    </nav>
+  </nav>

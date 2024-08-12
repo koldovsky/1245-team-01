@@ -1,0 +1,125 @@
+.numbers{
+    padding-top: 120px;
+    padding-right: 24px; 
+    padding-bottom: 60px;
+    padding-left: 24px;
+    background-color: #1a1b29;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.numbers__text--highlight{
+    color: #dbdbdb;
+    font-size: 0.75rem;
+}
+
+.numbers__result{
+    font-family: "Righteous", sans-serif;
+    margin-top: 20px;
+}
+
+.numbers__result--title{
+    color: #ffffff;
+    font-size: 1.875rem;
+}
+
+.numbers__description{
+    margin-top: 25px;
+}
+
+.numbers__description--text{
+    color: #cccccc;
+    font-size: 1.1875rem;
+}
+
+.numbers__image{
+    margin-top: 25px;
+}
+
+.numbers__bottom{
+    margin-top: 60px;
+    text-align: center;
+}
+.numbers__item
+
+h3.numbers__value{
+    font-family: "Righteous", sans-serif;
+}
+
+.numbers__value--highlight{
+    font-size: 3.5rem;
+    color: #ffffff;
+}
+
+.numbers__value--symbol{
+    color: #7f00ff
+}
+
+.numbers__value--letters{
+    color: #e100ff;
+}
+
+.numbers__label{
+margin-top: 10px;
+}
+
+.numbers__label--text{
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+
+.numbers__info{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.numbers__info--text{
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+.numbers__join{
+    background-color: #2a0239;
+}
+
+.numbers__join-text--highlight{
+    color: #ff7433;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.numbers__join-title--highlight{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.numbers__join-description--text{
+    color: #ffffffb3;
+    font-size: 1.1875rem;
+}
+
+.numbers__content{
+    padding-top: 39px;
+    padding-right: 45px;
+    padding-bottom: 39px;
+    padding-left: 45px;
+}
+
+.numbers__join-title{
+    margin-top: 20px;
+}
+
+.numbers__join-description{
+    margin-top: 25px;
+}
+
+.numbers__join--button{
+    margin-top: 35px;
+    
+}
+
+.numbers__join-link{
+    color: #ffffff;
+    font-size: 0.89375rem;
+    text-decoration: none;
+}
