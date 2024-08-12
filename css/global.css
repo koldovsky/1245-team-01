@@ -15,6 +15,11 @@
     --accent-color: #1a1b29;
     --text-color: white;
     --border-color: white;
+    --symbols-podcasts-color: #7F00FF;
+    --description-color: #cccccc;
+    --hr-podcasts-color:rgba(255,255,255,255,0.1);
+    --first-gradient-color:#c700fe;
+    --second-gradient-color:#5300fb;
     scroll-behavior: smooth;
     background-color: var(--accent-color);
     font-family: Noto Sans,sans-serif;
