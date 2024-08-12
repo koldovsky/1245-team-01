@@ -1,4 +1,6 @@
 @import "global.css";
+@import "global/global.header-nav.css";
+@import "global/global.footer.css";
 @import "./index/index.local-header.css";
 @import "./index/index.schedule.css";
 @import "./index/index.section-slider-albums.css";
