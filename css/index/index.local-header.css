@@ -55,6 +55,9 @@
     font-weight: bold;
     
 }
+.local-header__podcasts-links-container-1,.local-header__podcasts-links-container-2{
+    padding-right: 15px;
+}
 .local-header__podcasts hr{
     background-color:rgba(255, 255, 255, 0.1);
     border-color:rgba(255, 255, 255, 0.1);
