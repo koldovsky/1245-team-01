@@ -1,20 +1,40 @@
-/* Hidden table */
+* {
+  box-sizing: border-box;
+}
+.table-schedule{
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.table-desktop{
+  border-collapse: collapse;
+  text-align: left;
+   
+}
+.table-time{
+  color:#f93;
+} 
 
-.table-desktop .table-mobile {
-    display: none;
-  }
-  
-  /* vision mobile table */
-  @media (max-width: 767px) {
-    .table-mobile {
-      display: table; 
-      background-color: brown;
+/*table hidden */
+.table-large, .table-small {
+  display: none;
+}
+
+/* show desktop version */
+@media (min-width: 768px) {
+  .table-desktop-all {
+    display: table;
   }
 }
- /*vision desktop 768px */
- @media (min-width: 768px) {
-    .table-desktop {
-      display: table;
-      background-color: blueviolet;
-    }
+
+/* show mobile version */
+@media (max-width: 767px) {
+  .table-mobile-all {
+    display: table; 
   }
+}
