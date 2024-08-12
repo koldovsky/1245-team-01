@@ -24,7 +24,7 @@
 /* Логотип */
 
 /* Бургер-меню */
-.burger__logo-img{
+.burger__logo-img {
   display: none;
 }
 
@@ -81,15 +81,16 @@
   text-decoration: none;
 }
 
-.header__listen-now { /* Проблеми з переносом кнопки(можливі рішення: зробити грід 3х2*/ 
-  display: flex;  
+.header__listen-now {
+  /* Проблеми з переносом кнопки(можливі рішення: зробити грід 3х2*/
+  display: flex;
   min-width: 150px;
   height: auto;
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(-315deg, #e100ff,#3e00fa);
+  background: linear-gradient(-315deg, #e100ff, #3e00fa);
   padding: 10px 20px;
   border-radius: 30px;
   color: var(--nav-text-color);
@@ -97,11 +98,11 @@
   text-decoration: none;
 }
 
-.header__listen-now:hover{
+.header__listen-now:hover {
   background: linear-gradient(-315deg, #3e00fa, #e100ff);
 }
 
-.header__listen-ico{
+.header__listen-ico {
   position: relative;
   top: 0.17vh;
   width: 15%;
@@ -112,13 +113,12 @@
 /* Медіа-запит для екранів до 700px */
 @media (max-width: 700px) {
   .header__burger {
-
-    display: block; 
+    display: block;
     position: absolute;
     top: 1.2vh;
     right: 2vw;
-    .header__burger-line{
-     background: white; 
+    .header__burger-line {
+      background: white;
     }
   }
 
@@ -131,12 +131,12 @@
   }
 
   .header__menu {
-    display: block; 
+    display: block;
   }
 
   .header__menu-list {
     margin: 100px 10 10 20px;
-    .header__menu-item{
+    .header__menu-item {
       text-align: center;
       font-size: 30px;
     }
@@ -148,7 +148,7 @@
   }
 }
 
-  @media (min-width: 700px) {
+@media (min-width: 700px) {
   .header {
     padding: 15px;
   }
