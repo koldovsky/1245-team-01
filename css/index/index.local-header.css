@@ -10,7 +10,7 @@
 }
 .local-header__section-header {
     display: grid;
-    gap: 5px;
+    gap: 15px;
 }
 .local-header__title{
     font-size: 56px; 
@@ -24,13 +24,15 @@
     align-items: left; 
     text-align: left;
     
+    
 }
 .local-header__description-hr {
     width: 30%;
-    margin: 0;
+
     background-color: rgb(255, 116, 51);
     height: 5px;
     border: 0;
+    margin-top: 15px;
 }
 .local-header__branding h1{
     font-size: 56px;
@@ -40,6 +42,8 @@
 .local-header__info-title{
     font-size: 19px;
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .local-header__icon-conteiner{
     font-size: 26px;
@@ -67,7 +71,9 @@
 }
 .local-header__podcast-link{
      display: flex;
-     flex-position:row;
+     flex-direction:row;
+     margin-top:15px ;
+     margin-bottom:15px ;
 }
 .local-header__section-footer{
     margin-top: 50px;
@@ -90,6 +96,7 @@
     .local-header__description-hr {
         width: 90px;  
         margin: auto;
+        margin-top: 15px;
     }
     .local-header__branding{
         display: flex;

@@ -48,12 +48,30 @@
     padding: 15px;
     border-radius: 10px; 
   }
+  .genre-top{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .genre-top-text{
+     font-size: 14px;
+     font-family: 'Noto Sans';
+     color: #DBDBDB;
+     font-weight: bold;
+     text-transform: uppercase;
+  }
   .genre-type{
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
   .genre-text{
     font-size: 68px;
+    font-family: 'Righteous';
+    text-decoration: none;
+    color: #ffff;
     text-align: center;
   }
   .slesh-text-lightpurple{
