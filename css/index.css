@@ -3,6 +3,7 @@
 @import "index.schedule.css";
 @import "./index/index.section-slider-albums.css";
 @import "./index/index.section-podcasts.css";
+<<<<<<< HEAD
 @import "./index/index.section-news.css"
 
 
@@ -10,6 +11,9 @@
 
 
 @import "index/index.numbers.css";
+=======
+@import "./index/index.numbers.css";
+>>>>>>> a778971821c406f7c7fa9aa2e355bcfa8ea76118
 
 
 
