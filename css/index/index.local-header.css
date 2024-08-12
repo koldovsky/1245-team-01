@@ -65,6 +65,10 @@
 .local-header__podcasts-links-container-1{
     margin-bottom: 17px;
 }
+.local-header__podcast-link{
+     display: flex;
+     flex-position:row;
+}
 .local-header__section-footer{
     margin-top: 50px;
 }
@@ -104,10 +108,10 @@
     }
     .local-header__podcasts-links-container-1{
         margin-bottom: 0;
-        width: 40%;
+        width: 48%;
     }
     .local-header__podcasts-links-container-2{
-        width: 40%;
+        width: 48%;
     }
     .local-header__section-footer{
         margin-top: 55px;
