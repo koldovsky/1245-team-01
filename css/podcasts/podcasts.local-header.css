@@ -1,0 +1,9 @@
+.podcasts {
+    padding:40px 0;
+}
+.podcasts__wrapper {
+    padding:0 24px;
+}
+.podcasts__header {
+    line-height:24px;
+}
