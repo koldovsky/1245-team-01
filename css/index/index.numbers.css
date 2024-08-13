@@ -4,12 +4,19 @@
     padding-bottom: 60px;
     padding-left: 24px;
     background-color: #1a1b29;
-    font-family: "Noto Sans", sans-serif;
 }
+
+.numbers__header-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .numbers__text--highlight{
     color: #dbdbdb;
     font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .numbers__result{
@@ -38,8 +45,9 @@
 .numbers__bottom{
     margin-top: 60px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-.numbers__item
 
 h3.numbers__value{
     font-family: "Righteous", sans-serif;
@@ -59,7 +67,7 @@ h3.numbers__value{
 }
 
 .numbers__label{
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .numbers__label--text{
@@ -85,17 +93,20 @@ margin-top: 10px;
 .numbers__join-text--highlight{
     color: #ff7433;
     font-size: 0.75rem;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
 .numbers__join-title--highlight{
     color: #ffffff;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .numbers__join-description--text{
     color: #ffffffb3;
     font-size: 1.1875rem;
+    font-weight: bold;
 }
 
 .numbers__content{
@@ -122,4 +133,20 @@ margin-top: 10px;
     color: #ffffff;
     font-size: 0.89375rem;
     text-decoration: none;
+}
+
+@media (min-width: 800px) {
+    .numbers__header-wrap{
+        flex-direction: row;
+    }
+
+    .numbers__bottom{
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .numbers__item-wrap{
+        margin-left: 30px;
+        
+    }
 }
