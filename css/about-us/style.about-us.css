@@ -11,8 +11,7 @@ align-items: center;
 padding: 20px;
 }
 
-.container,
-.section__hero-image {
+.section__hero-image .container {
     max-width: 40%;
     display: inline-block;
     position: relative;
