@@ -1,40 +1,34 @@
-* {
-  box-sizing: border-box;
+.table__container {
+  justify-content: center;
 }
-.table-schedule{
-  font-family: Arial, sans-serif;
-  background-color: #1a1a2e;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
-.table-desktop{
-  border-collapse: collapse;
-  text-align: left;
-   
-}
-.table-time{
-  color:#f93;
-} 
 
-/*table hidden */
-.table-large, .table-small {
+.table__mobile__all,
+.table__desktop__all {
   display: none;
 }
 
-/* show desktop version */
-@media (min-width: 768px) {
-  .table-desktop-all {
-    display: table;
-  }
+.table__time {
+  color: rgb(255, 116, 51);
 }
 
-/* show mobile version */
+.table__day {
+  color: rgb(219, 219, 219);
+}
+.table__day__time{
+  color: #FFFFFF;;
+}
+
 @media (max-width: 767px) {
-  .table-mobile-all {
-    display: table; 
+  .table__mobile__all {
+    display: block;
+    justify-content: center;
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .table__desktop__all {
+    display: table;
+    justify-content: center;
+    text-align: left;
   }
 }
