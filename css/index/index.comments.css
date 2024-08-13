@@ -1,0 +1,98 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+section {
+  margin: 20px;
+}
+
+/* Секція Header */
+.header {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  justify-items: left;
+  text-align: left;
+  gap: 10px;
+  padding: 20px;
+}
+
+.header__star-title {
+  gap: 10px;
+  justify-items: center;
+  text-align: center;
+}
+
+.header__star {
+  font-size: 2rem;
+  color: #ff6347; /* Зірочка оранжевого кольору */
+}
+
+.header__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #aaa;
+  text-align: left;
+}
+
+.header__gratefulness {
+  font-size: 1rem;
+  color: #aaa;
+  text-align: right;
+}
+
+.comments__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Сітка для коментарів */
+@media (min-width: 768px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    text-align: left;
+    align-items: center;
+  }
+
+  .header__star-title {
+    justify-self: start;
+  }
+
+  .comments__list {
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки для коментарів */
+    gap: 40px;
+  }
+}
+
+.comment__content {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.comment__image {
+  border-radius: 20%;
+  margin-bottom: 10px;
+}
+
+.comment__text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.comment__author {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ff6347; /* Колір для імені автора */
+}
+
