@@ -20,7 +20,7 @@
   letter-spacing: 1.2px;
 }
 .podcasts__breadcrumbs-text {
-  color: var(--nav-text-color);
+  color: var(--white-color);
 }
 .podcasts__current {
   color: var(--color-tag-u);
