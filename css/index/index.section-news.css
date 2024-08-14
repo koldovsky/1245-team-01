@@ -117,6 +117,7 @@
 
     .news__header {
         flex-direction: row;
+        align-items: center;
     }
 
     .news__info, .news__description {
@@ -164,6 +165,10 @@
 @media (min-width: 1280px) {
     .container__news {
         padding: 0 15px;
+    }
+
+    .news__content {
+        margin: 50px -15px 0;
     }
 
     .news-article__link {
