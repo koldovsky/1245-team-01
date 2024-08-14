@@ -19,9 +19,10 @@
     --hr-podcasts-color:rgba(255,255,255,255,0.1);
     --first-gradient-color:#c700fe;
     --second-gradient-color:#5300fb;
+    --color-tag-u:rgb(255,116,51);
     scroll-behavior: smooth;
     background-color: var(--accent-color);
-    font-family: Noto Sans,sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 img {

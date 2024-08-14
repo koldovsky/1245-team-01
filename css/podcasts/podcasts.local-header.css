@@ -4,6 +4,32 @@
 .podcasts__wrapper {
     padding:0 24px;
 }
-.podcasts__header {
-    line-height:24px;
+.podcasts__title {
+    font-family:"Righteous", cursive;
+    font-size:56px;
+    color:var(--text-color);
+    font-weight:400;
+}
+.podcasts__breadcrumbs {
+    margin-top:35px;
+    display:flex;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:700;
+    line-height: 17px;
+    letter-spacing: 1.2px;
+}
+.podcasts__breadcrumbs-text {
+    
+    color:var(--nav-text-color);
+}
+.podcasts__current {
+    color:var(--color-tag-u);
+}
+.podcasts__content {
+    margin-top:50px;
+    font-size:19px;
+    color:var(--description-color);
+    font-weight:500;
+    line-height:28.5px;
 }
