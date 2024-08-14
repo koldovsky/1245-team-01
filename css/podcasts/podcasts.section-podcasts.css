@@ -68,7 +68,7 @@
   border-radius: 40px;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0px 10px 15px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 15px var(--shadow-button-color);
 }
 
 .podcasts-section__link:hover {
