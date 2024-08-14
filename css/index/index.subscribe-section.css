@@ -1,0 +1,97 @@
+.subscribe {
+    padding: 40px 25px 120px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    background-color: #2b2b48;
+    padding: 40px 30px 35px 30px;
+}
+
+.subscribe-section__first-part {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.subscribe-section__title {
+    font-family: Righteous, cursive;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+@media (min-width: 767px) {
+    .subscribe-section__first-part-title-text {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe-section__first-part-title-text {
+        font-size: 34px;
+    }
+}
+
+.subscribe-section__description {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 19px;
+    color: #cccccc;
+}
+
+.subscribe-form {
+    row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+    .subscribe-form__input {
+        border: none;
+        border-radius: 25px;
+        background-color: #363651;
+        padding: 10px 32px;
+        color: #a0a0ad;
+    }
+
+    .subscribe-form__input::placeholder {
+        color: #a0a0ad;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    .subscribe-button__btn {
+        background: linear-gradient(90deg, #e100ff, #8605ff, #7f00ff, #3e00fa);
+        display: block;
+        border-radius: 25px;
+        padding: 10px 32px;
+        color: #ffffff;
+        font-size: 13px;
+        font-family: "Noto Sans", sans-serif;
+        border: none;
+        font-weight: 700;
+    }
+
+    .subscribe-button__btn:hover {
+        background: linear-gradient(90deg, #3e00fa, #7f00ff, #8605ff, #e100ff);
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1170px;
+        column-gap: 80px;
+    }
+
+    .subscribe-section__first-part {
+        padding: 0px;
+    }
+
+    .subscribe-form {
+        flex: 1;
+    }
+}

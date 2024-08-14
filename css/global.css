@@ -20,9 +20,10 @@
 }
 
 body{
+    --color-tag-u:rgb(255,116,51);
     scroll-behavior: smooth;
     background-color: var(--accent-color);
-    font-family: Noto Sans,sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 img {
     display: block;
