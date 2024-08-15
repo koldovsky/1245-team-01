@@ -3,7 +3,6 @@
     padding-right: 24px; 
     padding-bottom: 60px;
     padding-left: 24px;
-    background-color: #1a1b29;
 }
 
 .numbers__header-wrap{
@@ -13,10 +12,11 @@
 
 
 .numbers__text--highlight{
-    color: #dbdbdb;
+    color: var(--nav-text-color);
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .numbers__result{
@@ -34,12 +34,13 @@
 }
 
 .numbers__description--text{
-    color: #cccccc;
+    color: var(--description-color);
     font-size: 1.1875rem;
 }
 
-.numbers__image{
+.numbers__img{
     margin-top: 25px;
+    
 }
 
 .numbers__bottom{
@@ -47,6 +48,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 h3.numbers__value{
@@ -59,7 +61,7 @@ h3.numbers__value{
 }
 
 .numbers__value--symbol{
-    color: #7f00ff
+    color: var(--symbols-podcasts-color)
 }
 
 .numbers__value--letters{
@@ -82,19 +84,23 @@ h3.numbers__value{
 }
 
 .numbers__info--text{
-    color: #cccccc;
+    color: var(--description-color);
     font-size: 1rem;
 }
 
 .numbers__join{
     background-color: #2a0239;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .numbers__join-text--highlight{
-    color: #ff7433;
+    color: var(--color-tag-u);
     font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .numbers__join-title--highlight{
@@ -145,8 +151,18 @@ h3.numbers__value{
         margin-top: 0;
     }
 
+    .numbers__img{
+        margin-bottom: 60px;
+    }
+
     .numbers__item-wrap{
-        margin-left: 30px;
-        
+        margin-left: 30px;    
+    }
+}
+
+@media (min-width: 904px) {
+    
+    .numbers__join{
+        flex-direction: row;
     }
 }
