@@ -43,6 +43,11 @@
     transform: rotate(180deg);
      
   }
+  .our-team-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .carousel-item {
     flex: 0 0 auto;
     text-align: left; 
@@ -53,7 +58,27 @@
     font-size: 24px;
     font-family: "Noto Sans";
   }
-
+  .team-title{
+    color: var(--nav-text-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Noto sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  }
+  .our-team-title{
+    font-size: 34px;
+    color: var(--white-color);
+    font-style: "Righteous";
+  }
+  .text-to-our-team{
+    font-size: 19px;
+    color: var(--description-color);
+  }
+  .container-to-our-team-text{
+      display: flex;
+      justify-content: right;
+  }
   @media (max-width: 768px) {
   .carousel-item {
     flex: 0 0 200px; 
