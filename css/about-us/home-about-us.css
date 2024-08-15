@@ -8,7 +8,6 @@
 .about-us-title {
   font-size: 56px;
   color: #ffffff;
-  padding-left: 20px;
   font-family: "Righteous";
 }
 .about-us-home {
@@ -63,8 +62,4 @@
     margin-top: 20px;
   }
 
-  img {
-    width: 100%; /* Make the image responsive */
-    height: auto;
-  }
 }
