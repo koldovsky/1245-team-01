@@ -1,0 +1,67 @@
+.container {
+  padding-left: 45px;
+  padding-right: 45px;  
+  box-sizing: border-box;
+  display: flex;
+  background-color: #151623;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.fact__year {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+}
+
+.fact__text {
+  color: #cccccc;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.slider__button__left {
+  width: 30px;
+  height: 30px;
+  color: #b2b2b7;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__button__right {
+  width: 30px;
+  height: 30px;
+  color: #b2b2b7;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.seperator__slide__2016 {
+  color: rgb(127, 0, 255);
+}
+
+.seperator__slide__2020 {
+  color: rgb(72, 88, 249);
+}
+
+.seperator__slide__2022 {
+  color: rgb(255, 116, 51);
+}
+
+.seperator__slide__2005 {
+  color: rgb(225, 0, 255);
+}
+
+.seperator__slide__2006 {
+  color: rgb(255, 116, 51);
+}
