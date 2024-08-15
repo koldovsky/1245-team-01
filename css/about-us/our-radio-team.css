@@ -6,7 +6,16 @@
     padding: 10px;
     box-sizing: border-box;
   }
-
+.carousel-item {
+    flex: 0 0 240px;
+    padding: 15px;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+}
   .arrow-svg_1j4 {
     width: 20px;
     height: 20px;
@@ -20,6 +29,7 @@
     object-fit: cover; 
     margin: 0 5px;
     border-radius: 10px;
+    padding-bottom: 20px;
   }
   .arrow-svg_1j4 {
     width: 20px;
@@ -30,19 +40,8 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    transform: rotate(180deg); 
-  }
-  .album-text-musictype{
-    font-size:12px;
-    color: #ff7433;
-  }
-  .album-text-albumname{
-    font-size:24px;
-    color: #ffff;
-  }
-  .album-text-autormname{
-    font-size:16px;
-    color: #ccc;
+    transform: rotate(180deg);
+     
   }
   .carousel-item {
     flex: 0 0 auto;
@@ -50,52 +49,11 @@
     padding: 15px;
     border-radius: 10px; 
   }
-  .genre-top{
-    display: flex;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
+  .team-name{
+    font-size: 24px;
+    font-family: "Noto Sans";
   }
-  .genre-top-text{
-     font-size: 14px;
-     font-family: 'Noto Sans';
-     color: #DBDBDB;
-     font-weight: bold;
-     text-transform: uppercase;
-  }
-  .genre-type{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  .genre-text{
-    font-size: 68px;
-    font-family: 'Righteous';
-    text-decoration: none;
-    color: #ffff;
-    text-align: center;
-  }
-  .slesh-text-lightpurple{
-    font-size: 68px;
-    color: #E100ff;
-    font-weight: 900;
-  }
-  .slesh-text-purple{
-    font-size: 68px;
-    color: #7f00ff;
-    font-weight: 900;
-  }
-  .slesh-text-orange{
-    font-size: 68px;
-    color: #ff7433;
-    font-weight: 900;
-  }
-  .slesh-text-blue{
-    font-size: 68px;
-    color: #4858f9;
-    font-weight: 900;
-  }
+
   @media (max-width: 768px) {
   .carousel-item {
     flex: 0 0 200px; 
