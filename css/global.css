@@ -23,6 +23,17 @@
     --subscribe-form-input-background-color:#363651;
     --subscribe-section-background-color:#2b2b48;
     --subscribe-form-input-color:#a0a0ad;
+    --about-us-slider-background-color:#151623;
+    --about-us-slider-fact-year:#ffffff;
+    --about-us-slider-fact-text:#cccccc;
+    --about-us-slider-buttons-color:#b2b2b7;
+    --about-us-slider-none-color:rgba(0, 0, 0, 0);
+    --about-us-slider-seperator-2016:rgb(127, 0, 255);
+    --about-us-slider-seperator-2020:rgb(72, 88, 249);
+    --about-us-slider-seperator-2022-2006:rgb(255, 116, 51);
+    --about-us-slider-seperator-2005:rgb(225, 0, 255)
+    
+
 }
 
 body{
