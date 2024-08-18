@@ -21,6 +21,7 @@
   border-collapse: collapse; 
   color: var(--schedule-table-text);
   table-layout: fixed;
+  text-align: left;
 }
 
 
