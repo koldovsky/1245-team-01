@@ -1,4 +1,4 @@
-/* .container {      (потрібне перейменування класу, так як назва вже зайнята)
+ .container {
   padding-left: 45px;
   padding-right: 45px;  
   box-sizing: border-box;
@@ -7,7 +7,8 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-} */
+ }
+
 
 .fact__year {
   color: #ffffff;
