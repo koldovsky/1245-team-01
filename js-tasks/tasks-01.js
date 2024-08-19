@@ -1,5 +1,5 @@
-// https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
+// https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 
-function evenOrOdd(number) {
-  return number % 2 === 0 ? "Even" : "Odd";
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
