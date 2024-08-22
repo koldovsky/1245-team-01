@@ -11,23 +11,27 @@
   height: 20px;
   cursor: pointer;
   margin: 0 10px;
+  background-color: white;
 }
 
 .carouselimg {
-  max-width: 250px;
+  max-width: 300px;
   height: auto;
   margin: 0 5px;
 }
+
 .arrow-svg_1j4 {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  background-color: white;
 }
 .arrow-svg_1j5 {
   width: 20px;
   height: 20px;
   cursor: pointer;
   transform: rotate(180deg);
+  background-color: white;
 }
 .album-text-musictype {
   font-size: 12px;
@@ -42,7 +46,8 @@
   color: var(--descripstion-color);
 }
 .carousel-item {
-  flex: 0 0 auto;
+  margin: 0; /* Reset margin */
+  padding: 0;
   text-align: left;
   padding: 15px;
   border-radius: 10px;
