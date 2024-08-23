@@ -1,104 +1,152 @@
 .carousel {
-    display: flex; 
-    flex-wrap: nowrap; 
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column ;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  grid-auto-columns: calc((100% / 4));
+}
+.carousel .dragging{
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.wrapper .arrow-svg_1j4 .arrow-svg_1j5{
+  transform: translateY(-50%);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .carousel-item {
+  flex-direction: column;
+}
+.carousel .dragging .carousel-item{
+   cursor: grab;
+   user-select: none;
+}
+.arrow-svg_1j4 {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
 
-  .arrow-svg_1j4 {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin: 0 10px;
-  }
+.carouselimg {
+  max-width: 450px;
+  width: 260;
+  height: auto;
+  margin: 0 5px;
+}
 
-  .carouselimg {
-    max-width: 250px;
-    height: auto;
-    margin: 0 5px;
-  }
-  .arrow-svg_1j4 {
-    width: 20px;
-    height: 20px;
-    cursor: pointer; 
-  }
-  .arrow-svg_1j5 {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    transform: rotate(180deg); 
-  }
-  .album-text-musictype{
-    font-size:12px;
-    color: #ff7433;
-  }
-  .album-text-albumname{
-    font-size:24px;
-    color: #ffff;
-  }
-  .album-text-autormname{
-    font-size:16px;
-    color: #ccc;
-  }
+.arrow-svg_1j4 {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.arrow-svg_1j5 {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.carousel-item {
+  flex: 0 0 auto;
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
+}
+.album-text-musictype {
+  font-size: 12px;
+  color: #ff7433;
+}
+.album-text-albumname {
+  font-size: 24px;
+  color: #ffff;
+}
+.album-text-autormname {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.genre-top {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.genre-top-text {
+  font-size: 14px;
+  font-family: "Noto Sans";
+  color: #dbdbdb;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.genre-type {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.genre-text {
+  font-size: 68px;
+  font-family: "Righteous";
+  text-decoration: none;
+  color: #ffff;
+  text-align: center;
+}
+.slesh-text-lightpurple {
+  font-size: 68px;
+  color: #e100ff;
+  font-weight: 900;
+}
+.slesh-text-purple {
+  font-size: 68px;
+  color: #7f00ff;
+  font-weight: 900;
+}
+.slesh-text-orange {
+  font-size: 68px;
+  color: #ff7433;
+  font-weight: 900;
+}
+.slesh-text-blue {
+  font-size: 68px;
+  color: #4858f9;
+  font-weight: 900;
+}
+@media (max-width: 768px) {
   .carousel-item {
-    flex: 0 0 auto;
-    text-align: left; 
-    padding: 15px;
-    border-radius: 10px; 
-  }
-  .genre-top{
-    display: flex;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-  }
-  .genre-top-text{
-     font-size: 14px;
-     font-family: 'Noto Sans';
-     color: #DBDBDB;
-     font-weight: bold;
-     text-transform: uppercase;
-  }
-  .genre-type{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-  .genre-text{
-    font-size: 68px;
-    font-family: 'Righteous';
-    text-decoration: none;
-    color: #ffff;
-    text-align: center;
-  }
-  .slesh-text-lightpurple{
-    font-size: 68px;
-    color: #E100ff;
-    font-weight: 900;
-  }
-  .slesh-text-purple{
-    font-size: 68px;
-    color: #7f00ff;
-    font-weight: 900;
-  }
-  .slesh-text-orange{
-    font-size: 68px;
-    color: #ff7433;
-    font-weight: 900;
-  }
-  .slesh-text-blue{
-    font-size: 68px;
-    color: #4858f9;
-    font-weight: 900;
-  }
-  @media (max-width: 768px) {
-  .carousel-item {
-    flex: 0 0 200px; 
+    flex: 0 0 200px;
   }
   .genre-text {
     font-size: 58px;
   }
-} 
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 1) - 9px); 
+  }
+}
+@media screen and (max-width: 479px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 1) - 9px); 
+  }
+  .album-text-albumname{
+    font-size: 32px;
+  }
+}
