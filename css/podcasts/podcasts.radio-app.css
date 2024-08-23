@@ -4,6 +4,14 @@
     text-align: center;
     background-position: center;
     padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-app__content {
+    max-width: 600px;
+    width: 100%;
 }
 
 .radio-app__content *{
@@ -39,4 +47,10 @@
 .radio-app__subtitle {
     font-size: 19px;
     color: rgba(255,255,255,0.7);
+}
+
+.radio-app__download-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* відстань між кнопками */
 }
