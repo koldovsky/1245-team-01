@@ -10,6 +10,7 @@
     .contacts-local-header__title h1{
         font-family: "Righteous", cursive;
         font-size: 56px;
+        font-weight:400;
     }
 
     .contacts-local-header__breadcrumb{
