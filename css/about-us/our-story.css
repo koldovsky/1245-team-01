@@ -1,22 +1,14 @@
 body {
     background-color: #000000;
     font-family: 'Noto Sans', sans-serif;
-    margin: auto;
+    margin: 0;
     padding: 0;
-    justify-content: space-between;
-    max-width: 1200px;
-}
-/* Верхний текст */
-.page__content { 
-    display: flex;
-    gap: 20px;
 }
 
-.story {
+.story, .vision {
     display: flex;
-    flex-direction: column;
-    max-width: 50%; 
-    padding: 0 20px;
+    align-items: center;
+    padding: 50px 0;
 }
 
 .story__icon, .vision__icon {
@@ -36,35 +28,30 @@ body {
     letter-spacing: 2px;
 }
 
-.description {  /* EchoWave Radio */
-    max-width: 40%;
-    padding: 0 20px;
+.description {
+    max-width: 600px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .description__intro {
-    margin: 0 auto;
     margin-bottom: 20px;
-    flex: 1;
 }
 
 .description__text {
     color: #FFFFFF;
-    font-size: 21px;
-    line-height: 1.5;
+    font-size: 19px;
+    line-height: 1.6;
     margin-bottom: 20px;
-    flex: 2;
 }
 
 .description__highlight--echowave {
     color: #FF7433;
     font-weight: bold;
-    font-size: 21px;
 }
 
 .description__highlight {
     color: #CCCCCC;
-    font-size: 16px;
 }
 
 .description__link {
@@ -77,33 +64,16 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    border-radius: 20px;
 }
 
 .divider {
     margin: 50px 0;
 }
-/* Нижний текст */
-.vision {
-display: flex;
-flex-direction: row;
-gap: 20px;
-max-width: 100%;
-padding: 30px 0 120px;
-}
 
-.vision__top {
-    display: flex;
-    flex-direction: column;
-    max-width: 30%;
-    flex: 1;
-    padding: 0 20px;
-}
-
-.vision__content {   /* 01. Empowering Musical */
+.vision__content {
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 20px;
-    flex: 1;
 }
 
 .vision__item {

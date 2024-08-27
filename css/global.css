@@ -9,21 +9,44 @@
 }
 
 :root {
-    --heading-color: white;
     --nav-text-color:#DBDBDB;
     --accent-color: #1a1b29;
-    --text-color: white;
-    --border-color: white;
+    --white-color: white;
+    --orange-color:rgb(255, 116, 51);
     --symbols-podcasts-color: #7F00FF;
     --description-color: #cccccc;
     --hr-podcasts-color:rgba(255,255,255,255,0.1);
     --first-gradient-color:#c700fe;
     --second-gradient-color:#5300fb;
-    scroll-behavior: smooth;
-    background-color: var(--accent-color);
-    font-family: Noto Sans,sans-serif;
+    --background-color-podcasts-section:#2b2b48;
+    --color-tag-u:rgb(255,116,51);
+    --shadow-button-color:rgb(0, 0, 0, 0.2);
+    --subscribe-form-input-background-color:#363651;
+    --subscribe-section-background-color:#2b2b48;
+    --subscribe-form-input-color:#a0a0ad;
+    --schedule-table-text:#FFF;
+    --schedule-table-time:rgb(255, 116, 51);
+    --schedule-table-days:rgb(219, 219, 219);
+    --shedule-table-header-day-time:#FFFFFF;
+    --shedule-table-border:#444;
+    --about-us-slider-background-color:#151623;
+    --about-us-slider-fact-year:#ffffff;
+    --about-us-slider-fact-text:#cccccc;
+    --about-us-slider-buttons-color:#b2b2b7;
+    --about-us-slider-none-color:rgba(0, 0, 0, 0);
+    --about-us-slider-seperator-2016:rgb(127, 0, 255);
+    --about-us-slider-seperator-2020:rgb(72, 88, 249);
+    --about-us-slider-seperator-2022-2006:rgb(255, 116, 51);
+    --about-us-slider-seperator-2005:rgb(225, 0, 255)
+    
+
 }
 
+body{
+    scroll-behavior: smooth;
+    background-color: var(--accent-color);
+    font-family: "Noto Sans", sans-serif;
+}
 img {
     display: block;
     width: 100%;

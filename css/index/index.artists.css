@@ -1,0 +1,112 @@
+.artists {
+  max-width: 100%;
+  padding: 0px 24px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.artists__hr {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(12, 7, 7, 0.1);
+  margin: 15px 0px;
+}
+
+.artists__nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.artists__prev-btn,
+.artists__next-btn {
+  background-color: rgba(255, 255, 255, 0.8); /* Button background color */
+  border: none;
+  border-radius: 50%; /* Make the button circular */
+  color: black;
+  width: 25px; /* Width of the button */
+  height: 25px; /* Height of the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px; /* Font size for the arrows */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.artists__favorite {
+  position: relative; /* To position the nav buttons relative to this container */
+  width: 100%; /* Ensure the container takes the full width of its parent */
+}
+
+.artists__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.artists__item {
+  margin-top: 45px;
+  flex: 0 0 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  visibility: visible;
+}
+
+.artists__image {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Allow image to scale with container */
+  aspect-ratio: 5/5; /* Ensure all images maintain the same aspect ratio */
+  object-fit: cover; /* Ensure image covers the entire area, preserving aspect ratio */
+  margin: 0 auto; /* Center the image */
+}
+.artists__title,
+.artists__name {
+  color: white;
+}
+
+.artists__title {
+  font-size: 30px;
+  font-family: "Righteous", cursive;
+}
+
+.artists__name,
+.artists__location {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.artists__name {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.artists__location {
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+}
+
+/* Media queries to adjust the number of visible items */
+@media (min-width: 750px) {
+  .artists__item {
+    flex: 0 0 50%; /* 2 items per view */
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .artists__item {
+    flex: 0 0 25%; /* 4 items per view */
+    min-width: 25%;
+  }
+}

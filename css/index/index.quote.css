@@ -1,0 +1,31 @@
+.quote {
+    padding: 60px 0px;
+}
+
+.quote__content {
+    padding: 0px 24px;
+}
+
+.quote__title {
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #dbdbdb;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.quote__paragraph {
+    margin-top: 20px;
+    font-size: 56px;
+    font-family: 'Righteous', cursive;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.quote__highlight-1 {
+    color: rgb(225, 0, 255);
+}
+
+.quote__highlight-2 {
+    color: rgb(127, 0, 255);
+}
