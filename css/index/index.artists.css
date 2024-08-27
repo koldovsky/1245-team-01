@@ -2,12 +2,14 @@
   max-width: 100%;
   padding: 0px 24px;
   position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .artists__hr {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(12, 7, 7, 0.1);
   margin: 15px 0px;
 }
 
@@ -49,6 +51,7 @@
   display: flex;
   flex-direction: row;
   transition: transform 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 .artists__item {
@@ -94,21 +97,14 @@
 }
 
 /* Media queries to adjust the number of visible items */
-@media (min-width: 600px) {
+@media (min-width: 750px) {
   .artists__item {
     flex: 0 0 50%; /* 2 items per view */
     min-width: 50%;
   }
 }
 
-@media (min-width: 900px) {
-  .artists__item {
-    flex: 0 0 33.33%; /* 3 items per view */
-    min-width: 33.33%;
-  }
-}
-
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .artists__item {
     flex: 0 0 25%; /* 4 items per view */
     min-width: 25%;
