@@ -104,14 +104,7 @@
       display: flex;
       justify-content: right;
   }
-  @media (max-width: 768px) {
-  .carousel-item {
-    flex: 0 0 200px; 
-  }
-  .genre-text {
-    font-size: 58px;
-  }
-} 
+
 @media (max-width: 768px) {
   .carousel-item {
     flex: 0 0 200px;
