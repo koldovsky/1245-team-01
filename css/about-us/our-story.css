@@ -6,6 +6,7 @@ body, .container {
     justify-content: space-between;
     max-width: 1200px;
 }
+
 /* Верхний текст */
 .page__content { 
     display: flex;
@@ -83,13 +84,14 @@ body, .container {
 .divider {
     margin: 50px 0;
 }
+
 /* Нижний текст */
 .vision {
-display: flex;
-flex-direction: row;
-gap: 20px;
-max-width: 100%;
-padding: 30px 0 120px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 100%;
+    padding: 30px 0 120px;
 }
 
 .vision__top {
@@ -120,4 +122,68 @@ padding: 30px 0 120px;
     color: #CCCCCC;
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    body, .container {
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
+    .page__content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .story {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .description {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .story__icon-text, .vision__icon-text {
+        font-size: 24px;
+    }
+
+    .story__title, .vision__title {
+        font-size: 10px;
+    }
+
+    .description__text {
+        font-size: 18px;
+    }
+
+    .description__highlight--echowave, 
+    .description__highlight {
+        font-size: 16px;
+    }
+
+    .description__link {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .vision {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .vision__top, 
+    .vision__content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .vision__highlight--name {
+        font-size: 18px;
+    }
+
+    .vision__highlight {
+        font-size: 14px;
+    }
 }
