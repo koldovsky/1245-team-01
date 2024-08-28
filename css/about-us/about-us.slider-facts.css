@@ -65,3 +65,30 @@
 .seperator__slide__2006 {
   color: var(--about-us-slider-seperator-2022-2006);
 }
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 200px;
+  }
+  .genre-text {
+    font-size: 58px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 1) - 9px); 
+  }
+}
+@media screen and (max-width: 479px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 1) - 9px); 
+  }
+  .album-text-albumname{
+    font-size: 32px;
+  }
+}

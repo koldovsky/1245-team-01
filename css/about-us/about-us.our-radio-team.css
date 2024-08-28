@@ -1,20 +1,46 @@
 .carousel {
-    display: flex; 
-    flex-wrap: nowrap; 
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column ;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  grid-auto-columns: calc((100% / 5));
+}
+.carousel .dragging{
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.wrapper .arrow-svg_1j4 .arrow-svg_1j5{
+  transform: translateY(-50%);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .carousel-item {
+  flex-direction: column;
+}
+.carousel .dragging .carousel-item{
+   cursor: grab;
+   user-select: none;
+}
 .carousel-item {
-    flex: 0 0 240px;
-    padding: 15px;
-    background-color: #1a1a2e;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    color: #fff;
-    margin: 10px;
+  flex: 0 0 240px;
+  background-color: #1a1a2e;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+  height: 300px; 
 }
   .arrow-svg_1j4 {
     width: 20px;
@@ -24,12 +50,11 @@
   }
 
   .carouselimg {
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     margin: 0 5px;
     border-radius: 10px;
-    padding-bottom: 20px;
   }
   .arrow-svg_1j4 {
     width: 20px;
@@ -79,11 +104,31 @@
       display: flex;
       justify-content: right;
   }
-  @media (max-width: 768px) {
+
+@media (max-width: 768px) {
   .carousel-item {
-    flex: 0 0 200px; 
+    flex: 0 0 200px;
   }
   .genre-text {
     font-size: 58px;
   }
-} 
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) );
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 1)); 
+  }
+}
+@media screen and (max-width: 479px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 1) ); 
+  }
+  .album-text-albumname{
+    font-size: 32px;
+  }
+}

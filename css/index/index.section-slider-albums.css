@@ -12,7 +12,7 @@
   overflow: hidden;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  grid-auto-columns: calc((100% / 4));
+  grid-auto-columns: calc((100% / 5));
 }
 .carousel .dragging{
   scroll-snap-type: none;
@@ -33,30 +33,11 @@
    cursor: grab;
    user-select: none;
 }
-.arrow-svg_1j4 {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  margin: 0 10px;
-}
-
 .carouselimg {
   max-width: 450px;
   width: 260;
   height: auto;
   margin: 0 5px;
-}
-
-.arrow-svg_1j4 {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-.arrow-svg_1j5 {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  transform: rotate(180deg);
 }
 .carousel-item {
   flex: 0 0 auto;
@@ -64,6 +45,21 @@
   padding: 15px;
   border-radius: 10px;
 }
+.carousel-item.duplicate {
+  visibility: hidden;
+}
+.arrow-svg_1j4 {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.arrow-svg_1j5 {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
 .album-text-musictype {
   font-size: 12px;
   color: #ff7433;
