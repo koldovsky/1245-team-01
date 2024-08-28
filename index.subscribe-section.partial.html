@@ -1,19 +1,53 @@
-<div class="subscribe container">
-  <div class="subscribe-section">
-    <div class="subscribe-section__first-part">
-      <div class="subscribe-section__title">
-        Stay in Tune with the Latest Beats!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <div class="subscribe">
+    <div class="subscribe-section">
+      <div class="subscribe-section__first-part">
+        <div class="subscribe-section__title">
+          Stay in Tune with the Latest Beats!
+        </div>
+        <div class="subscribe-section__description">
+          Subscribe now to unlock exclusive content and early access to new
+          releases.
+        </div>
       </div>
-      <div class="subscribe-section__description">
-        Subscribe now to unlock exclusive content and early access to new
-        releases.
-      </div>
+      <form
+        id="contact-form"
+        class="subscribe-form"
+        action="https://formspree.io/f/xzzpojeg"
+        method="POST"
+      >
+        <input
+          type="email"
+          name="email"
+          class="subscribe-form__input"
+          placeholder="Email"
+          required
+        />
+
+        <input
+          type="hidden"
+          name="message"
+          value="Subscription to the newsletter"
+        />
+
+        <button
+          type="submit"
+          id="contact-form-button"
+          class="subscribe-button__btn"
+        >
+          Subscribe
+        </button>
+
+        <p id="contact-form-status"></p>
+      </form>
     </div>
-    <div class="subscribe-form">
-      <input type="email" class="subscribe-form__input" placeholder="Email" />
-      <button type="submit" class="subscribe-button__btn">
-        Subscribe
-      </button>
-    </div>
+    <script type="module" src="js/index.js"></script>
   </div>
-</div>
+</html>
