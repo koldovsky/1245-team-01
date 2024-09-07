@@ -130,6 +130,15 @@
   font-weight: bold;
 }
 
+.about-podcasts__episode-button:hover {
+  
+  background: linear-gradient(
+    90deg,
+    var(--second-gradient-color),
+    var(--first-gradient-color)
+  );
+}
+
 .about-podcasts__episode-play-icon {
   width: 24px;
   height: 24px;
