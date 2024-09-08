@@ -1,5 +1,5 @@
 const slides = [
-  '<div class="slide"><p class="fact__year">2016</p><span class="seperator__slide__2016">-</span><p class="fact__text">The name was changed to EchoWave by our team.</p></div>',
+  '<div class="slide"><p class="fact__year">2016</p><span class="seperator__slide__2016">—</span><p class="fact__text">The name was changed to EchoWave by our team.</p></div>',
   '<div class="slide"><p class="fact__year">2020</p><span class="seperator__slide__2020">—</span><p class="fact__text">We gained popularity due to our podcasts during the pandemic.</p></div>',
   '<div class="slide"><p class="fact__year">2022</p><span class="seperator__slide__2022">—</span><p class="fact__text">Our fantastic team won the Vest NY Radio award.</p></div>',
   '<div class="slide"><p class="fact__year">2005</p><span class="seperator__slide__2005">—</span><p class="fact__text">Jack Richardson started his own, small radio studio.</p></div>',
