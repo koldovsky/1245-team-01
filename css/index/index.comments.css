@@ -9,7 +9,7 @@
 }
 .header__star {
   font-size: 2rem;
-  color: #ff6347; /* Зірочка оранжевого кольору */
+  color: #ff6347; 
 }
 
 .header__title {
@@ -31,11 +31,10 @@
   gap: 20px;
 }
 
-/* Сітка для коментарів */
 @media (min-width: 768px) {
   .header {
     grid-template-columns: 1fr 1fr;
-    justify-items: start;
+    justify-items:  start;
     text-align: left;
     align-items: center;
   }
@@ -45,7 +44,7 @@
   }
 
   .comments__list {
-    grid-template-columns: repeat(2, 1fr); /* Дві колонки для коментарів */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
   }
 }
@@ -84,6 +83,6 @@
   top:80%;
   font-weight: bold;
   font-size: 1rem;
-  color: #ff6347; /* Колір для імені автора */
+  color: #ff6347; 
 }
 
