@@ -1,0 +1,81 @@
+.join-banner {
+  padding: 120px, 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../img/about-us/background-join-banner-section.png);
+  background-position: 50% 50%;
+  min-height: 555px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.join-banner__title {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-tag-u);
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.join-banner__main-phrase {
+  font-family: "Righteous", cursive;
+  font-size: 56px;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+}
+.join-banner__text-content {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 19px;
+  color: var(--description-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+.join-banner__button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.join-banner__button {
+  background: linear-gradient(90deg, #e100ff, #8605ff, #7f00ff, #3e00fa);
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  width: 185px;
+  height: 45px;
+}
+.join-banner__button:hover {
+  background: linear-gradient(90deg, #3e00fa, #7f00ff, #8605ff, #e100ff);
+}
+.join-banner__button-text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14.3px;
+  color: var(--white-color);
+  padding: 0 0 0 10px;
+}
+.join-banner__button-icon {
+  filter: invert(1);
+  width: 24px;
+  height: 24px;
+}
+@media (min-width: 992px) {
+  .join-banner__main-phrase {
+    font-size: 68px;
+  }
+}
+.join-banner__button-icon {
+  height: 24px;
+  width: 24px;
+}

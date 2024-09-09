@@ -1,0 +1,97 @@
+.subscribe {
+    padding: 40px 25px 120px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    background-color: var(--subscribe-section-background-color);
+    padding: 40px 30px 35px 30px;
+}
+
+.subscribe-section__first-part {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.subscribe-section__title {
+    font-family: Righteous, cursive;
+    font-size: 34px;
+    color: var(--white-color);
+}
+
+@media (min-width: 767px) {
+    .subscribe-section__first-part-title-text {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe-section__first-part-title-text {
+        font-size: 34px;
+    }
+}
+
+.subscribe-section__description {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 19px;
+    color: var(--description-color);
+}
+
+.subscribe-form {
+    row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+    .subscribe-form__input {
+        border: none;
+        border-radius: 25px;
+        background-color: var(--subscribe-form-input-background-color);
+        padding: 10px 32px;
+        color: var(--subscribe-form-input-color);
+    }
+
+    .subscribe-form__input::placeholder {
+        color: var(--subscribe-form-input-color);
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    .subscribe-button__btn {
+        background: var(--index-subscribe-section-btn-gradient);
+        display: block;
+        border-radius: 25px;
+        padding: 10px 32px;
+        color: var(--white-color);
+        font-size: 13px;
+        font-family: "Noto Sans", sans-serif;
+        border: none;
+        font-weight: 700;
+    }
+
+    .subscribe-button__btn:hover {
+        background: var(--index-subscribe-section-btn-gradient-hoover);
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1170px;
+        column-gap: 80px;
+    }
+
+    .subscribe-section__first-part {
+        padding: 0px;
+    }
+
+    .subscribe-form {
+        flex: 1;
+    }
+}

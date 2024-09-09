@@ -1,14 +1,23 @@
-body {
+body, .container {
     background-color: #000000;
     font-family: 'Noto Sans', sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
+    justify-content: space-between;
+    max-width: 1200px;
 }
 
-.story, .vision {
+/* Верхний текст */
+.page__content { 
     display: flex;
-    align-items: center;
-    padding: 50px 0;
+    gap: 20px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%; 
+    padding: 0 20px;
 }
 
 .story__icon, .vision__icon {
@@ -28,30 +37,35 @@ body {
     letter-spacing: 2px;
 }
 
-.description {
-    max-width: 600px;
-    margin: 0 auto;
+.description {  /* EchoWave Radio */
+    max-width: 40%;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 .description__intro {
+    margin: 0 auto;
     margin-bottom: 20px;
+    flex: 1;
 }
 
 .description__text {
     color: #FFFFFF;
-    font-size: 19px;
-    line-height: 1.6;
+    font-size: 21px;
+    line-height: 1.5;
     margin-bottom: 20px;
+    flex: 2;
 }
 
 .description__highlight--echowave {
     color: #FF7433;
     font-weight: bold;
+    font-size: 21px;
 }
 
 .description__highlight {
     color: #CCCCCC;
+    font-size: 16px;
 }
 
 .description__link {
@@ -64,16 +78,34 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 .divider {
     margin: 50px 0;
 }
 
-.vision__content {
-    max-width: 600px;
+/* Нижний текст */
+.vision {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 100%;
+    padding: 30px 0 120px;
+}
+
+.vision__top {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.vision__content {   /* 01. Empowering Musical */
     margin: 0 auto;
     padding: 0 20px;
+    flex: 1;
 }
 
 .vision__item {
@@ -90,4 +122,68 @@ body {
     color: #CCCCCC;
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    body, .container {
+        padding: 0 10px;
+        max-width: 100%;
+    }
+
+    .page__content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .story {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .description {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .story__icon-text, .vision__icon-text {
+        font-size: 24px;
+    }
+
+    .story__title, .vision__title {
+        font-size: 10px;
+    }
+
+    .description__text {
+        font-size: 18px;
+    }
+
+    .description__highlight--echowave, 
+    .description__highlight {
+        font-size: 16px;
+    }
+
+    .description__link {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .vision {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .vision__top, 
+    .vision__content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .vision__highlight--name {
+        font-size: 18px;
+    }
+
+    .vision__highlight {
+        font-size: 14px;
+    }
 }

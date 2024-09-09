@@ -1,43 +1,68 @@
-body {
+body, .container {
     background-color: #000000;
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     color: #FFFFFF;
+    padding: 30px;
 }
 
 .section__hero {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 50, 0.3));
 }
 
-.section__hero-image .container {
-    max-width: 40%;
-    display: inline-block;
-    position: relative;
+.section__hero-image {
     width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.section__hero-text-tune,
+.section__hero-text-discover,
+.section__hero-text-stay {
+    position: absolute;
+    padding-left: 10%;
+    z-index: 1;
+    text-align: left;
+    width: 90%;
 }
 
 .section__hero-text-tune {
-    color: #FF7433;
-    font-size: 12px;
-    margin-bottom: 10px;
+    top: 5%;
+    color: #FFA500;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .section__hero-text-discover {
+    top: 40%;
     color: #FFFFFF;
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .section__hero-text-stay {
-    color: #FFFFFFB3;
-    font-size: 19px;
+    bottom: 5%;
+    color: #CCCCCC;
+    font-size: 18px;
 }
 
-.section_about {
+.section__image {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 1;
+}
+
+.section__about {
     margin-top: 40px;
     padding: 20px;
+    text-align: left;
 }
 
 .section__about-title {
@@ -50,7 +75,7 @@ padding: 20px;
 .section__about-subtitle {
     color: #FFFFFF;
     font-size: 30px;
-    font-family: Righteous, cursive;
+    font-family: 'Righteous', cursive;
     margin-bottom: 20px;
 }
 
@@ -60,15 +85,44 @@ padding: 20px;
     margin-bottom: 20px;
 }
 
-.feature_list {
+.section__about-subtitle-highlight {
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+    font-size: 38px;
+}
+
+.section__about-learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7F00FF;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.section__about-learn-more:hover {
+    background-color: #A100FF;
+}
+
+.section__divider {
+    margin: 40px 0;
+}
+
+.features__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    padding: 20px;
+    gap: 20px; /* Управляем расстоянием между элементами */
 }
 
 .features__item {
     text-align: center;
+    max-width: 20%;
 }
 
 .features__item-title {
@@ -80,8 +134,106 @@ padding: 20px;
 .features__item-text {
     color: #CCCCCC;
     font-size: 16px;
+    margin-top: 10px;
 }
 
-.features__item-devider {
-    margin: 10px 0;
+.features__item-divider {
+    margin: 10px auto;
+    width: 40%;
+}
+
+.features__item-divider-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.features__item-image {
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3)); /* Добавляем эффект тени для иконок */
+}
+
+body, .container {
+    background-color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+/* Mobile Adaptation */
+@media (max-width: 768px) {
+    body, .container {
+        padding: 15px;
+    }
+
+    .section__hero {
+        padding: 15px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .section__hero-text-tune,
+    .section__hero-text-discover,
+    .section__hero-text-stay {
+        padding-left: 5%;
+        width: 90%;
+        text-align: left;
+    }
+
+    .section__hero-text-tune {
+        top: 10%;
+        font-size: 12px;
+    }
+
+    .section__hero-text-discover {
+        top: 30%;
+        font-size: 24px;
+    }
+
+    .section__hero-text-stay {
+        bottom: 10%;
+        font-size: 16px;
+    }
+
+    .section__image {
+        bottom: 10px;
+        width: 90%;
+    }
+
+    .section__about-title {
+        font-size: 10px;
+    }
+
+    .section__about-subtitle {
+        font-size: 24px;
+    }
+
+    .section__about-text {
+        font-size: 14px;
+    }
+
+    .section__about-subtitle-highlight {
+        font-size: 30px;
+    }
+
+    .features__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features__item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .features__item-title {
+        font-size: 20px;
+    }
+
+    .features__item-text {
+        font-size: 14px;
+    }
+
+    .features__item-divider {
+        width: 60%;
+    }
 }

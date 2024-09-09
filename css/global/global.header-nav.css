@@ -121,6 +121,9 @@
     }
   }
 
+  .mobile__logo{
+    display: block;
+  }
   .burger__logo-img {
     display: block;
     margin-left: 30vw;
@@ -128,6 +131,15 @@
     margin-bottom: 15vh;
     max-width: 40%;
   }
+
+
+  .header__logo {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 0; /* Вимкнення відступу справа */
+  }
+
 
   .header__menu {
     display: block;

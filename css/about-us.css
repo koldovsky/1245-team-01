@@ -1,4 +1,7 @@
 @import "global.css";
 @import "global/global.header-nav.css";
 @import "global/global.footer.css";
-@import "./about-us/home-about-us.css";
+@import "./about-us/about-us.home-about-us.css";
+@import "./about-us/about-us.our-radio-team.css";
+@import "./about-us/about-us.slider-facts.css";
+@import "./about-us/about-us.join-banner.css";

@@ -1,3 +1,7 @@
 @import "global.css";
 @import "global/global.header-nav.css";
 @import "global/global.footer.css";
+@import "./podcasts/podcasts.local-header.css";
+@import "./podcasts/podcasts.section-podcasts.css";
+@import "podcasts/podcasts.about-podcasts.css";
+@import "./podcasts/podcasts.radio-app.css";
