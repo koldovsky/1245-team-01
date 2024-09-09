@@ -1,0 +1,128 @@
+.contacts-section {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--white-color);
+}
+.contact-section__content {
+  max-width: 50%;
+}
+
+.contact-section__title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-section__description {
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-section__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contact-section__info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-section__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #2b2c45;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.contact-section__info-title {
+  color: #ff6347;
+  font-weight: bold;
+}
+
+.contact-section__info-text {
+  color: #fff;
+}
+
+.contact-section__link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-section__link:hover {
+  color: #ff6347;
+}
+
+/* Стилізація форми */
+.contact-section__form {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2c45;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.contact-section__input,
+.contact-section__textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #2b2c45;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-section__input::placeholder,
+.contact-section__textarea::placeholder {
+  color: #888;
+}
+
+.contact-section__textarea {
+  height: 100px;
+}
+
+.contact-section__submit {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #ff6347, #8000ff);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-section__submit:hover {
+  background: linear-gradient(90deg, #ff6347, #ff0080);
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 770px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section__content,
+  .contact-section__form {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .contact-section__form {
+    margin-top: 30px;
+  }
+}
