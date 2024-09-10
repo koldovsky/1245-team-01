@@ -4,12 +4,12 @@
   text-align: center;
 }
 
-.comments {
-  padding-bottom: 50px;
+.comments{
+  padding-bottom:50px;
 }
 .header__star {
   font-size: 2rem;
-  color: #ff6347;
+  color: #ff6347; 
 }
 
 .header__title {
@@ -34,7 +34,7 @@
 @media (min-width: 768px) {
   .header {
     grid-template-columns: 1fr 1fr;
-    justify-items: start;
+    justify-items:  start;
     text-align: left;
     align-items: center;
   }
@@ -44,7 +44,7 @@
   }
 
   .comments__list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     gap: 40px;
   }
 }
@@ -59,19 +59,18 @@
   flex-direction: row;
   text-align: center;
   height: 170px;
-}
+} 
 
 .comment__image {
   position: relative;
-  top: -12%;
-  width: 22%;
-  margin-right: 30px;
+  top:-12%;
+  width:22%;
+  margin-right:30px;
   height: auto;
 }
 
 .comment__text {
-  width: auto;
-  border: 1px solid red;
+  width:auto;
   font-size: 1rem;
   margin-bottom: 10px;
 }
@@ -79,9 +78,9 @@
 .comment__author {
   position: relative;
   width: 100%;
-  left: -80%;
-  top: 80%;
+  left:-80%;
+  top:80%;
   font-weight: bold;
   font-size: 1rem;
-  color: #ff6347;
+  color: #ff6347; 
 }
