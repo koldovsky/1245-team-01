@@ -58,29 +58,35 @@
   width: 100%;
   flex-direction: row;
   text-align: center;
-  height: 170px;
-} 
-
-.comment__image {
-  position: relative;
-  top:-12%;
-  width:22%;
-  margin-right:30px;
-  height: auto;
+  min-height: 170px;
+  align-items: center;
 }
 
-.comment__text {
-  width:auto;
-  font-size: 1rem;
-  margin-bottom: 10px;
+.comment__image-container {
+  display: flex;
+  flex-direction: column; /* Вирівнює зображення та ім'я вертикально */
+  align-items: center; /* Центрує їх */
+  margin-right: 30px; /* Відступ для простору між зображенням і текстом */
+}
+
+.comment__image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Відступ між зображенням і ім'ям */
 }
 
 .comment__author {
-  position: relative;
-  width: 100%;
-  left:-80%;
-  top:80%;
   font-weight: bold;
   font-size: 1rem;
   color: #ff6347; 
+  text-align: center; /* Вирівнювання імені по центру під зображенням */
 }
+
+.comment__text {
+  flex-grow: 1;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
