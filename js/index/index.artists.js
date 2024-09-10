@@ -1,15 +1,8 @@
-console.log('JavaScript file loaded');
 
 const prevBtn = document.querySelector('.artists__prev-btn');
 const nextBtn = document.querySelector('.artists__next-btn');
 const itemsContainer = document.querySelector('.artists__list');
 let items = document.querySelectorAll('.artists__item');
-
-console.log('DOM fully loaded and parsed');
-console.log('prevBtn:', prevBtn);
-console.log('nextBtn:', nextBtn);
-console.log('itemsContainer:', itemsContainer);
-console.log('items:', items);
 
 let itemCount = items.length;
 let visibleItemsCount = getVisibleItemsCount();

@@ -44,6 +44,7 @@
 .artists__favorite {
   position: relative; /* To position the nav buttons relative to this container */
   width: 100%; /* Ensure the container takes the full width of its parent */
+  overflow: hidden;
 }
 
 .artists__list {
@@ -51,7 +52,6 @@
   display: flex;
   flex-direction: row;
   transition: transform 0.5s ease-in-out;
-  /*overflow: hidden;*/
 }
 
 .artists__item {
