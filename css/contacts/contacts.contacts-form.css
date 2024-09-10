@@ -126,8 +126,9 @@
   }
 }
 .clock {
+  margin: auto;
   position: relative; 
-  left: 65%;
+  left: 67%;
   transform: translateX(-50%); 
   color: #17D4FE;
   font-size: 60px;
