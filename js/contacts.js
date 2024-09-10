@@ -1,5 +1,5 @@
 function init() {
-    import('./contacts/contacts.contacts-local-header');
+    import('./contacts/contacts.contacts-local-header.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
